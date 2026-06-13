@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "_id": "1",
+      "name": "Persist Test",
+      "email": "persisttest@example.com",
+      "passwordHash": "$2a$10$RtFBdGzGnNiURbEgull9LuKnSU4gLZWL7fRbSsq//sgfTg5LIiz1y",
+      "phone": "2222222222",
+      "address": "Persist Address",
+      "role": "both",
+      "createdAt": "2026-05-24T07:25:44.677Z"
+    },
+    {
+      "_id": "2",
+      "name": "durga prasad",
+      "email": "kud.durgaprasad@gmail.com",
+      "passwordHash": "$2a$10$JKKRGcdnEv8mMxB0V28NaOOCHX8O6PIfvXNVd.DezwLlohhbMXWwi",
+      "phone": "+91 7794089905",
+      "address": "amberpet, hyderabad, telangana",
+      "role": "both",
+      "createdAt": "2026-05-24T10:30:13.088Z"
+    },
+    {
+      "_id": "3",
+      "name": "durga prasad",
+      "email": "durgaprasadkudumula@gmail.com",
+      "passwordHash": "$2a$10$jpwV7YtRPM74p5jkz7FA.e7OFtQywxF2tFVtPXSQ.Be0AD8WMSjIq",
+      "phone": "+91 7794089905",
+      "address": "amberpet, hyderabad, telangana",
+      "role": "both",
+      "createdAt": "2026-06-10T06:07:56.163Z"
+    },
+    {
+      "_id": "4",
+      "name": "rishi",
+      "email": "rishikesh@gmail.com",
+      "passwordHash": "$2a$10$AN3gbxEBPSbYYT4qMIqa2uzksnTKHcMeS3ko/Bz1bOa5vFETCIVvG",
+      "phone": "9505839608",
+      "address": "jbs",
+      "role": "both",
+      "createdAt": "2026-06-10T06:12:30.953Z"
+    }
+  ],
+  "donations": [
+    {
+      "_id": "1",
+      "donor": "2",
+      "donorName": "durga prasad",
+      "donorPhone": "7794089905",
+      "foodType": "Cooked Meal",
+      "foodDescription": "freshly cooked biryani",
+      "quantity": "20 servings",
+      "expiryDate": "2026-05-26T13:00",
+      "image": "/uploads/1779618717125-Screenshot 2026-05-24 103309.png",
+      "address": "2-2-1055/66, amberpet",
+      "location": {
+        "lat": 17.393781890117552,
+        "lng": 78.51549961204203
+      },
+      "status": "collected",
+      "createdAt": "2026-05-24T10:31:57.136Z"
+    },
+    {
+      "_id": "2",
+      "donor": "2",
+      "donorName": "durga prasad",
+      "donorPhone": "7794089905",
+      "foodType": "Cooked Meal",
+      "foodDescription": "freshly cooked biryani",
+      "quantity": "20 servings",
+      "expiryDate": "2026-05-26T13:00",
+      "image": "/uploads/1779618943867-Screenshot 2026-05-24 103309.png",
+      "address": "2-2-1055/66, amberpet",
+      "location": {
+        "lat": 17.39373344272212,
+        "lng": 78.51544826569258
+      },
+      "status": "reserved",
+      "createdAt": "2026-05-24T10:35:43.873Z"
+    },
+    {
+      "_id": "3",
+      "donor": "3",
+      "donorName": "durga prasad",
+      "donorPhone": "7794089905",
+      "foodType": "Cooked Meal",
+      "foodDescription": "biryani",
+      "quantity": "20 servings",
+      "expiryDate": "2026-06-11T13:00",
+      "image": "/uploads/1781071770403-Screenshot 2026-05-24 103309.png",
+      "address": "bhagawathi shop",
+      "location": {
+        "lat": 17.384631540953986,
+        "lng": 78.49468960783943
+      },
+      "status": "available",
+      "createdAt": "2026-06-10T06:09:30.416Z"
+    },
+    {
+      "_id": "4",
+      "donor": "4",
+      "donorName": "rishi",
+      "donorPhone": "9612349054",
+      "foodType": "Cooked Meal",
+      "foodDescription": "biryani",
+      "quantity": "5kg",
+      "expiryDate": "2026-06-10T18:00",
+      "image": "/uploads/1781072351283-Screenshot 2026-05-24 103309.png",
+      "address": "my chai break",
+      "location": {
+        "lat": 17.398242873214514,
+        "lng": 78.61737457970135
+      },
+      "status": "available",
+      "createdAt": "2026-06-10T06:19:11.299Z"
+    },
+    {
+      "_id": "5",
+      "donor": "3",
+      "donorName": "durga prasad",
+      "donorPhone": "7794089905",
+      "foodType": "Cooked Meal",
+      "foodDescription": "biryani",
+      "quantity": "5kgs",
+      "expiryDate": "2026-06-14T13:00",
+      "image": "/uploads/1781343090406-Screenshot 2026-05-24 103309.png",
+      "address": "kalimatha tample",
+      "location": {
+        "lat": 17.38459322002691,
+        "lng": 78.49309265613556
+      },
+      "status": "available",
+      "createdAt": "2026-06-13T09:31:30.418Z"
+    }
+  ],
+  "orders": [
+    {
+      "_id": "1",
+      "donation": "1",
+      "receiver": "2",
+      "receiverName": "durga prasad",
+      "receiverPhone": "+91 7794089905",
+      "receiverAddress": "amberpet, hyderabad, telangana",
+      "pickupTime": "2026-05-24T18:00",
+      "notes": "",
+      "status": "pending",
+      "createdAt": "2026-05-24T10:32:58.204Z"
+    },
+    {
+      "_id": "2",
+      "donation": "2",
+      "receiver": "2",
+      "receiverName": "durga prasad",
+      "receiverPhone": "+91 7794089905",
+      "receiverAddress": "amberpet, hyderabad, telangana",
+      "pickupTime": "2026-05-24T18:00",
+      "notes": "",
+      "status": "pending",
+      "createdAt": "2026-05-24T10:36:40.495Z"
+    },
+    {
+      "_id": "3",
+      "donation": "3",
+      "receiver": "3",
+      "receiverName": "rishi",
+      "receiverPhone": "+91 7794089905",
+      "receiverAddress": "amberpet, hyderabad, telangana",
+      "pickupTime": "2026-06-10T18:00",
+      "notes": "",
+      "status": "pending",
+      "createdAt": "2026-06-10T06:10:22.064Z"
+    },
+    {
+      "_id": "4",
+      "donation": "3",
+      "receiver": "4",
+      "receiverName": "rishi",
+      "receiverPhone": "+9151733272",
+      "receiverAddress": "jbs",
+      "pickupTime": "20206-06-13T18:00",
+      "notes": "",
+      "status": "pending",
+      "createdAt": "2026-06-10T06:14:49.876Z"
+    },
+    {
+      "_id": "5",
+      "donation": "4",
+      "receiver": "3",
+      "receiverName": "durga prasad",
+      "receiverPhone": "+91 7794089905",
+      "receiverAddress": "kl;",
+      "pickupTime": "2026-06-10T14:00",
+      "notes": "",
+      "status": "pending",
+      "createdAt": "2026-06-10T06:20:19.001Z"
+    }
+  ],
+  "nextIds": {
+    "user": 5,
+    "donation": 6,
+    "order": 6
+  }
+}

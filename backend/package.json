@@ -1,0 +1,22 @@
+{
+  "name": "food-wastage-prevention-backend",
+  "version": "1.0.0",
+  "description": "Backend for food wastage prevention platform",
+  "main": "models/server.js",
+  "scripts": {
+    "start": "node models/server.js",
+    "dev": "nodemon models/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
