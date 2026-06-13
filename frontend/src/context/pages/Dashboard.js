@@ -22,7 +22,7 @@ const Dashboard = () => {
   const [donations, setDonations] = useState([]);
   const [selected, setSelected] = useState(null);
   const [center, setCenter] = useState({ lat: 17.385, lng: 78.4867 }); // Hyderabad default
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+  const API_BASE_URL = process.env.REACT_APP_API_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5000' : '');
   const [filter, setFilter] = useState('All');
   const navigate = useNavigate();
  

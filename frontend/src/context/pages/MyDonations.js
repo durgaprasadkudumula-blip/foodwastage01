@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
  
 const MyDonations = () => {
   const [donations, setDonations] = useState([]);
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+  const API_BASE_URL = process.env.REACT_APP_API_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5000' : '');
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
  

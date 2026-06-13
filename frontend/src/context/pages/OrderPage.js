@@ -11,7 +11,7 @@ const OrderPage = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const donation = state?.donation;
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+  const API_BASE_URL = process.env.REACT_APP_API_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5000' : '');
   const [loading, setLoading] = useState(false);
  
   const [form, setForm] = useState({
